@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# ID files
+/.vscode
+
+# build
+/build
+
+# server
+/server
+
+# misc
+.env.development
+.env.production
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

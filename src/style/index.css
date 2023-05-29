@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+#root {
+  --primary: #4dc0b6;
+  --blue: #0074c1;
+  --white: #ffffff;
+  --green: #00ac69;
+  --red: #ff1616;
+  --gray: #9e9e9e;
+  --vio: #800dad;
+  --btn-avtaar-round: #659ce0;
+  --btn-avtaar-round-color: #212121;
+  --btn-primary: #35313e;
+  --btn-secondary: #0074c1;
+  --btn-tertiary: #009400;
+  --btn-tertiary-hover: #108000;
+  --btn-secondary-hover: #005c99;
+  --head-main-label: #03a9f4;
+  --header-main: #34495e;
+  --header-secondary: #03a9f4;
+}
+body {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13px !important;
+  overflow: hidden;
+  background-color: #ececec !important;
+  padding-top: 0px !important;
+}
+
+html {
+  background-color: #ececec !important;
+}
+
+.css-udx2ky::-webkit-scrollbar,
+.column-2::-webkit-scrollbar,
+.tabs-wrap::-webkit-scrollbar,
+.aboutPage::-webkit-scrollbar,
+.drawer-form-wrp::-webkit-scrollbar,
+.deprc-table::-webkit-scrollbar,
+.broadcast-chkbx-pnl::-webkit-scrollbar,
+.attendence-grid::-webkit-scrollbar,
+.vis-his-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.css-udx2ky::-webkit-scrollbar,
+.column-2::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.bankcard-wrap::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body:horizontal,
+.scroll:horizontal,
+.shpment-itm-add-grid:horizontal,
+.shpment-itm-add-grid-view:horizontal,
+.proformaInvoice-content tbody:horizontal,
+.vis-his-container:horizontal {
+  height: 5px;
+}
+
+body {
+  scrollbar-width: thin;
+  /* scrollbar-color: #90A4AE #CFD8DC; */
+}
+
+body.add-sales-order-page {
+  padding-top: 0 !important;
+}
+
+.css-udx2ky::-webkit-scrollbar-track,
+.column-2::-webkit-scrollbar-track,
+.bankcard-wrap::-webkit-scrollbar-track,
+.tabs-wrap::-webkit-scrollbar-track,
+.aboutPage::-webkit-scrollbar-track,
+.drawer-form-wrp::-webkit-scrollbar-track,
+.deprc-table::-webkit-scrollbar-track,
+.broadcast-chkbx-pnl::-webkit-scrollbar-track,
+.attendence-grid::-webkit-scrollbar-track,
+.vis-his-container::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 6px;
+  height: 5px;
+}
+
+.css-udx2ky::-webkit-scrollbar-thumb,
+.column-2::-webkit-scrollbar-thumb,
+.bankcard-wrap::-webkit-scrollbar-thumb,
+.tabs-wrap::-webkit-scrollbar-thumb,
+.aboutPage::-webkit-scrollbar-thumb,
+.drawer-form-wrp::-webkit-scrollbar-thumb,
+.deprc-table::-webkit-scrollbar-thumb,
+.broadcast-chkbx-pnl::-webkit-scrollbar-thumb,
+.attendence-grid::-webkit-scrollbar-thumb,
+.vis-his-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  min-height: 40px;
+  max-height: 80px;
+}
+
+.css-udx2ky::-webkit-scrollbar-thumb:hover,
+.column-2::-webkit-scrollbar-thumb:hover,
+.bankcard-wrap::-webkit-scrollbar-thumb:hover,
+.tabs-wrap::-webkit-scrollbar-thumb:hover,
+.aboutPage::-webkit-scrollbar-thumb:hover,
+.drawer-form-wrp::-webkit-scrollbar-thumb:hover,
+.deprc-table::-webkit-scrollbar-thumb:hover,
+.broadcast-chkbx-pnl::-webkit-scrollbar-thumb:hover,
+.attendence-grid::-webkit-scrollbar-thumb:hover,
+.vis-his-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.scroll {
+  padding-right: 10px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(121, 121, 121);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(121, 121, 121);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(121, 121, 121);
+}
+
+.homeCard {
+  background-color: #add8e6;
+  border-radius: 4px;
+  min-height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.main-title {
+  font-size: 22px;
+  margin: 15px 0 0 0;
+  color: #222;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-20 {
+  font-size: 23px;
+}
+
+.home-icn {
+  color: #fff;
+  background: #08485c;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+}
+
+.homeCard h2 {
+  font-size: 22px;
+  color: #003546;
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 1140px) {
+}
+@media screen and (max-width: 600px) {
+}
