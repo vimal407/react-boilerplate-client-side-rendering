@@ -82,7 +82,7 @@ serve -s build -l 4000
 ```
 -l in serve is use to change the port number while service app from build folder
 
-## Folder structure
+## Folder structure (How to structure your code)
 
 ### assets
 * All the static assets reside here.
@@ -104,14 +104,13 @@ serve -s build -l 4000
 
 ### ui-controls
 * It holds all the UI controls which is required to build components
-* UI control like: button, checkbox, dropdown etc.
+* UI control like: drawer, bottom-sheet, checkbox, dropdown etc.
 
 ### router
 * It contains, all the routing logic.
 * Our app uses “react-router-dom” for routing implementation.
 * Mainly 2 types of routes are included, public & private, where private being the ones that require authentication.
 * “PrivatRoute.js” is a component to add a check for user authentication for secure/private routes.
-* “/components” directory contain all the navigation specific components like header, nav-bar, like so
 
 ### redux
 * “react-redux, redux-persist, @reduxjs/toolkit, redux-logger” is being used to manage the state of application. It is a single source of truth, it means that the only way to change data in UI is to dispatch redux action which will change state within redux reducer
@@ -142,6 +141,6 @@ serve -s build -l 4000
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+This project is released under the [GNU License](LICENSE).
 
 ## About us
