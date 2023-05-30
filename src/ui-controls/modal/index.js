@@ -32,7 +32,6 @@ const Modal = ({
       ) : null}
       <IoIosClose className="delete-close" onClick={onClose} />
       <h4 className={titleStyle}>{title}</h4>
-      {/* <i className="fa fa-close" onClick={onClose}></i> */}
       {children}
     </ReactModal>
   );

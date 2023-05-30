@@ -19,6 +19,11 @@ const currencySymbols = {
   VND: '₫', // Vietnamese Dong
 };
 
+const languages = {
+  english: 'ENG',
+  hindi: 'HI',
+};
+
 const TOKEN_KEY = 'token';
 
-export { APPLICATION_NAME, baseAuth, currencySymbols, TOKEN_KEY };
+export { APPLICATION_NAME, languages, baseAuth, currencySymbols, TOKEN_KEY };

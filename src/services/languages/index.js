@@ -3,23 +3,21 @@ import { languages } from 'services/constants';
 const Languages = {
   [languages.english]: {
     //login screen
-    next: 'NEXT',
-    login: 'Login',
-    changeContactNo: 'Change Contact Number',
-    enterOtp: 'Enter a otp',
-    firstTimeLoginMsg: 'Open Your SnB App On Your Phone To Get The Access PIN',
-    resetPassword: 'Reset Password',
-    otherLoginMsgSnb: 'Login to Your Developer Notebook',
-    otherLoginMsgDnb: 'Login to Your Society Notebook',
-    mobilePlaceholder: 'Enter Mobile Number',
-    mobileNo: 'Mobile Number',
-    adminAccount: 'Admin Account',
-    signInMsgSnb: 'Sign In To Your Society Notebook',
-    signInMsgDnb: 'Sign In To Your Developer Notebook',
-    copyright: 'Copyright - Kodebin Solution Private Limited',
-    appStoreMsg: 'Get It On App Store & Play Store',
-    mobileErrorMsg: 'Enter valid mobile number',
-    otpErrorMsg: 'Invalid Otp',
+    margmakerSolutions: 'MargMaker Solutions',
+    helloUser: 'Hello User',
+    aboutUs: 'About Us',
+    workShocase: 'Work Showcase',
+    uiComponents: 'UI-Component',
+    uiStyle: 'UI Style Guide',
+  },
+  [languages.hindi]: {
+    //login screen
+    margmakerSolutions: 'मार्गमेकर सॉल्यूशंस',
+    helloUser: 'हैलो उपयोगकर्ता',
+    aboutUs: 'हमारे बारे में',
+    workShocase: 'वर्क शोकेस',
+    uiComponents: 'यूआई-घटक',
+    uiStyle: 'यूआई स्टाइल गाइड',
   },
 };
 

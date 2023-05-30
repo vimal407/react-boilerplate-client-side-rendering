@@ -10,8 +10,8 @@ If you love this boilerplate, give us a star :)
 ```
 
 ### Container-View design pattern
-• Container/View pattern (also known as Presentational/Container, Smart/Dumb) is a technique of splitting components into 'Containers' which are responsible for any stateful logic and data fetching and 'Views' which are responsible for data presentation.
-• It used to increase the reusability of views
+* Container/View pattern (also known as Presentational/Container, Smart/Dumb) is a technique of splitting components into 'Containers' which are responsible for any stateful logic and data fetching and 'Views' which are responsible for data presentation.
+* It used to increase the reusability of views
 
 ### Boilerplate Architecture
 
@@ -20,20 +20,20 @@ If you love this boilerplate, give us a star :)
 </div>
 
 #### Module:
-• All the various modules like Claim, PDM, Team Workload etc are module.
-• Each module consists of container, component and slice, container consist of index.js file which exports the module container as a default module which makes the screen available as a functional component.
+* All the various modules like Claim, PDM, Team Workload etc are module.
+* Each module consists of container, component and slice, container consist of index.js file which exports the module container as a default module which makes the screen available as a functional component.
 #### Component:
-• Component hold UIControl and other common components too to display data, capture user event.
+* Component hold UIControl and other common components too to display data, capture user event.
 #### UIControl:
-• UIControls like buttons, checkbox, dropdown etc.
-• It can be reused in components to increase code reusability hence increase development speed
+* UIControls like buttons, checkbox, dropdown etc.
+* It can be reused in components to increase code reusability hence increase development speed
 #### Redux:
-• If any event occurs from component, it dispatches action. Events like fetch data, button press, filter data etc.
-• If action is of async/thunk(Asynchronous) type then it will go to middleware to fetch data otherwise it directly go to Reducer.
-• After getting the payload(data) from successful async, it updates its state immutably, by making copies of the parts of the state that need to change and only modify those copies.
-• By using selector component will get data from store, if data changes UI re-renders.
+* If any event occurs from component, it dispatches action. Events like fetch data, button press, filter data etc.
+* If action is of async/thunk(Asynchronous) type then it will go to middleware to fetch data otherwise it directly go to Reducer.
+* After getting the payload(data) from successful async, it updates its state immutably, by making copies of the parts of the state that need to change and only modify those copies.
+* By using selector component will get data from store, if data changes UI re-renders.
 #### Middleware:
-• Depending on type of request it calls api using AXIOS library or the data which is available in JSON file.
+* Depending on type of request it calls api using AXIOS library or the data which is available in JSON file.
 
 ### Pre-requisites
 - Node.js (v14.x)
@@ -41,7 +41,6 @@ If you love this boilerplate, give us a star :)
 
 ## Quick start
 After cloning this repo run command from your project directory
-
 ```
 npm i 
 ```
@@ -49,7 +48,6 @@ npm i
 ## Available Scripts
 
 In the project directory, you can run:
-
 ```
 npm start
 ```
@@ -57,28 +55,22 @@ npm start
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The page will reload if you make edits.<br /> You will also see any lint errors in the console.
+
+```
+npm run build:development
+```
+Builds the app for development to the `build` folder.<br /> It correctly bundles app in development mode and optimizes the build but contain debug information.
+
+The build is minified and the filenames include the hashes.<br /> Your app is ready to be deployed in develpment mode!
 
 ```
 npm run build:production
 ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles app in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.<br /> It correctly bundles app in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-```
-npm run build:development
-```
-
-Builds the app for development to the `build` folder.<br />
-It correctly bundles app in development mode and optimizes the build but contain debug information.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed in develpment mode!
+The build is minified and the filenames include the hashes.<br /> Your app is ready to be deployed!
 
 To serve the app from build folder use following commands
 
@@ -103,7 +95,7 @@ serve -s build -l 4000
 * All the components should be registered and exported from /index.js for a single access point.
 
 ### modules
-* All the various modules like my_queue, authorization etc are defined here.
+* All the various modules like home, about etc are defined here.
 * Each module consist of container, component and slice, container consist of index.js file which exports the module container as a default module which makes the screen available as a functional component.
 * Component directory hold all the component that are required by only this module.
 * Slice directory contain redux slice and backend/service api.
@@ -126,7 +118,7 @@ serve -s build -l 4000
 * This is the central state of the application. This incorporates all the mapping between reducer, store, persist and middle-wares.
 * It combines all the “slice” present in all the “modules”
 * A “slice” combines the action(synchronous), thunkAction(asynchronous), reducer, selector, initial state of application.
-* thunkActions will use modules/slice/…Api.js for backend connectivity. Thunk is a redux middleware used to handle asynchronous actions and side-effects.
+* thunkActions will use modules/…/slice/…Action.js for backend connectivity. Thunk is a redux middleware used to handle asynchronous actions and side-effects.
 * “redux-persist” is used to persist data locally in device across user session.
 * State describes the condition of the app at a specific point in time 
 * The UI is rendered based on state

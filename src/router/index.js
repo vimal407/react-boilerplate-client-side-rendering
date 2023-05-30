@@ -8,6 +8,9 @@ const UIComponents = lazy(() => import('components/UIComponents'));
 const Login = lazy(() => import('../modules/login/container'));
 const Dashboard = lazy(() => import('../modules/home/container'));
 const About = lazy(() => import('modules/about/container'));
+const WorkShocase = lazy(() => import('modules/work-shocase/container'));
+const StyleGuide = lazy(() => import('modules/style-guide/container'));
+
 const Error404 = lazy(() => import('./Error404'));
 
 const Routing = () => (
@@ -28,6 +31,22 @@ const Routing = () => (
           element={
             <PrivateRoute>
               <About />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/work-shocase"
+          element={
+            <PrivateRoute>
+              <WorkShocase />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/style-guide"
+          element={
+            <PrivateRoute>
+              <StyleGuide />
             </PrivateRoute>
           }
         />
